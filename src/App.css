@@ -1,3 +1,23 @@
-.App {
+.board {
+  display: flex;
+  width: 600px;
+  height: 600px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  font-size: 90px;
   text-align: center;
+  padding: 40px;
+}
+
+.square:hover {
+  background-color: orangered;
 }
