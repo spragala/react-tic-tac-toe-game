@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// Based on tutorial from Decypher Media
+// https://www.youtube.com/watch?v=pTHCwUdGFkc&t=1851s
+
 class App extends Component {
   constructor(props) {
     super(props)

@@ -1,3 +1,7 @@
+
+/* This styling based on tutorial from Decypher Media
+https://www.youtube.com/watch?v=pTHCwUdGFkc&t=1851s */
+
 .board {
   display: flex;
   width: 600px;
@@ -6,6 +10,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+  margin: 80px;
 }
 
 .square {
@@ -20,4 +25,8 @@
 
 .square:hover {
   background-color: orangered;
+  opacity: .3;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.5);
 }
+
+/* STYLES */
