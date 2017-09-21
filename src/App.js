@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Board from './components/Board';
+import Navbar from './components/Navbar';
 import './styles/App.css';
 
 
@@ -13,7 +14,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="page-wrapper">
+        <Navbar />
         <Board />
       </div>
     );
