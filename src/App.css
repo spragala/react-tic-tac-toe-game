@@ -1,7 +1,4 @@
 
-/* This styling based on tutorial from Decypher Media
-https://www.youtube.com/watch?v=pTHCwUdGFkc&t=1851s */
-
 .board {
   display: flex;
   width: 600px;
@@ -10,17 +7,26 @@ https://www.youtube.com/watch?v=pTHCwUdGFkc&t=1851s */
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  margin: 80px;
+  margin: 20px auto;
 }
 
 .square {
   height: 200px;
   width: 200px;
   box-sizing: border-box;
-  border: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
   font-size: 90px;
   text-align: center;
   padding: 40px;
+}
+
+.square:nth-child(3), .square:nth-child(6), .square:nth-child(9) {
+  border-right: 2px solid black;
+}
+
+.square:nth-child(7), .square:nth-child(8), .square:nth-child(9) {
+  border-bottom: 2px solid black;
 }
 
 .square:hover {
