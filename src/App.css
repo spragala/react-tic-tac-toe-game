@@ -1,0 +1,38 @@
+
+.board {
+  display: flex;
+  width: 600px;
+  height: 600px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  font-size: 90px;
+  text-align: center;
+  padding: 40px;
+}
+
+.square:nth-child(3), .square:nth-child(6), .square:nth-child(9) {
+  border-right: 2px solid black;
+}
+
+.square:nth-child(7), .square:nth-child(8), .square:nth-child(9) {
+  border-bottom: 2px solid black;
+}
+
+.square:hover {
+  background-color: orangered;
+  opacity: .3;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.5);
+}
+
+/* STYLES */
