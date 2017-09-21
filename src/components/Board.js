@@ -67,7 +67,7 @@ class Board extends Component {
           </div>;
           }
         )}
-        <button href="#" onClick={this.resetGame}>Reset Game</button>
+        <a href="#" className="btn" onClick={this.resetGame}>Reset Game</a>
       </div>
     );
   }
