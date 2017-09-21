@@ -1,0 +1,8 @@
+div.nav-bar {
+  background: orangered !important;
+  opacity: .7;
+}
+
+div.nav-bar button {
+  display: none !important;
+}
