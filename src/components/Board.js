@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class Board extends Component {
   constructor(props) {
     super(props)
@@ -15,7 +16,8 @@ class Board extends Component {
   }
 
   handleClick(index) {
-    // if (there's a winner) stop the game:
+    // if (there's a winner) stop the game
+    // else keep playing
     if (this.state.winner) {
       alert('Press Refresh')
     } else {
@@ -58,6 +60,7 @@ class Board extends Component {
           </div>;
           }
         )}
+
       </div>
     );
   }
