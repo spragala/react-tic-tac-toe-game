@@ -10,13 +10,21 @@ class App extends Component {
     this.state = {
       test: false
     }
+
+  }
+
+  resetGame(e) {
+    e.preventDefault();
+
+    window.location.reload();
+    console.log('hello')
   }
 
   render() {
     return (
       <div className="page-wrapper">
-        <Navbar />
-        <Board /> 
+        <Navbar onReset={ this.resetGame }/>
+        <Board />
       </div>
     );
   }

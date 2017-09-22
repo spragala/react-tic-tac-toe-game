@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Board.css';
 
-
 class Board extends Component {
   constructor(props) {
     super(props)
@@ -48,7 +47,6 @@ class Board extends Component {
         this.setState({winner: true})
       }
     })
-
   }
 
   render() {

@@ -24,7 +24,7 @@
 }
 
 .square:nth-child(3), .square:nth-child(6), .square:nth-child(9) {
-  border-right: 3px solid black;
+  border-right: 2px solid black;
 }
 
 .square:nth-child(7), .square:nth-child(8), .square:nth-child(9) {

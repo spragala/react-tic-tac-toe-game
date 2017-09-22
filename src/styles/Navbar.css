@@ -14,5 +14,9 @@ nav {
   transform: scale3d(1.1, 1.1, 1.1);
   color: #fff;
   border: 1px solid #fff;
-  box-shadow: 1px 15px 10px -10px black;
+  box-shadow: 1px 17px 10px -10px #555;
+}
+
+a.brand-logo {
+  margin-left: 20px;
 }
