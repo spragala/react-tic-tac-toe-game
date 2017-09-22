@@ -1,8 +1,18 @@
-div.nav-bar {
-  background: orangered !important;
-  opacity: .7;
+nav {
+  background-color: transparent;
+  box-shadow: none;
 }
 
-div.nav-bar button {
-  display: none !important;
+.reset-button {
+  background-color: white;
+  color: #324B4A;
+}
+
+.reset-button:hover {
+  background-color: #324B4A;
+  opacity: 0.7;
+  transform: scale3d(1.1, 1.1, 1.1);
+  color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 1px 15px 10px -10px black;
 }

@@ -1,0 +1,38 @@
+.board {
+  display: flex;
+  width: 585px;
+  height: 585px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px auto;
+  box-shadow: 1px 15px 10px -10px #666;
+}
+
+.square {
+  height: 195px;
+  width: 195px;
+  box-sizing: border-box;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  font-size: 90px;
+  text-align: center;
+  padding: 40px;
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+.square:nth-child(3), .square:nth-child(6), .square:nth-child(9) {
+  border-right: 3px solid black;
+}
+
+.square:nth-child(7), .square:nth-child(8), .square:nth-child(9) {
+  border-bottom: 2px solid black;
+}
+
+.square:hover {
+  background-color: orangered;
+  opacity: .3;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.5);
+}

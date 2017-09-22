@@ -1,13 +1,27 @@
 import React, { Component } from 'react';
-import AppBar from 'material-ui/AppBar';
+import '../styles/Navbar.css';
 
 class Navbar extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  resetGame(e) {
+    e.preventDefault();
+    console.log('hello')
+    window.location.reload();
+  }
+
   render() {
-    return (
-      <AppBar
-        title="Tic-Tac-Toe"
-        className="nav-bar"
-      />
+    return(
+      <nav>
+        <div className="nav-wrapper">
+          <a className="brand-logo">Tic Tac Toe</a>
+          <ul className="right hide-on-med-and-down">
+            <li><a className="waves-effect waves-light btn reset-button" onClick={this.resetGame}><i className="material-icons left">refresh</i>New Game </a></li>
+          </ul>
+        </div>
+      </nav>
     )
   }
 }
