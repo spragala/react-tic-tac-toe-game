@@ -10,13 +10,20 @@ class App extends Component {
     this.state = {
       test: false
     }
+    this.resetGame = this.resetGame.bind(this);
+  }
+
+  resetGame(e) {
+    e.preventDefault();
+    this.setState({ test: true })
   }
 
   render() {
     return (
       <div className="page-wrapper">
-        <Navbar />
-        <Board /> 
+        <div>{ this.state.test }</div>
+        <Navbar resetGame={ this.resetGame }/>
+        <Board shouldRefresh={ this.state.test } /> 
       </div>
     );
   }
