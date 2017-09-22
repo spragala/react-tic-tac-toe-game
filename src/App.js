@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div className="page-wrapper">
         <Navbar />
-        <Board />
+        <Board /> 
       </div>
     );
   }
