@@ -12,6 +12,20 @@ class Board extends Component {
         '','','','','','','','',''
       ],
       winner: false,
+      shouldRefresh: false
+    }
+  }
+
+  componentWillReceiveProps() {
+    if (this.props.shouldRefresh) {
+      this.setState({
+        currentTurn: "X",
+        board: [
+          '','','','','','','','',''
+        ],
+        winner: false,
+        shouldRefresh: false
+      })
     }
   }
 
@@ -22,15 +36,15 @@ class Board extends Component {
       alert('Press Refresh')
     } else {
       if(this.state.board[index] === '') {
-        this.state.board[index] = this.state.currentTurn
+        let clonedBoard = this.state.board.slice(0)
+        clonedBoard[index] = this.state.currentTurn
         this.setState({
-          board: this.state.board,
+          board: clonedBoard,
           currentTurn: this.state.currentTurn === this.state.PLAYER_ONE_SYMBOL
           ? this.state.PLAYER_TWO_SYMBOL
           : this.state.PLAYER_ONE_SYMBOL,
-        })
+        }, this.checkForWinner)
       }
-      this.checkForWinner();
     }
   }
 
@@ -54,6 +68,7 @@ class Board extends Component {
       <div className="board">
         {this.state.board.map((cell, index) => {
           return <div
+            key={ index }
             onClick={this.handleClick.bind(this, index)}
             data-cell-id={index}
             className="square">{cell}
