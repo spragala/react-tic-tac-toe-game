@@ -12,7 +12,7 @@ class Navbar extends Component {
               <a
                 className="waves-effect waves-light btn reset-button"
                 onClick={ this.props.resetGame }>
-                <i className="material-icons left">refresh</i>New Game
+                <i className="material-icons left">refresh</i> New Game
               </a>
             </li>
           </ul>

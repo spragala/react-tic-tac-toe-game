@@ -6,16 +6,16 @@ import './styles/App.css';
 
 class App extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      test: false
-    }
+      gameOver: false
+    };
     this.resetGame = this.resetGame.bind(this);
   }
 
   resetGame(e) {
     e.preventDefault();
-    this.setState({ test: true })
+    this.setState({ gameOver: true });
   }
 
   render() {
@@ -23,7 +23,7 @@ class App extends Component {
       <div className="page-wrapper">
         <div>{ this.state.test }</div>
         <Navbar resetGame={ this.resetGame }/>
-        <Board shouldRefresh={ this.state.test } />
+        <Board shouldRefresh={ this.state.gameOver } />
       </div>
     );
   }
